@@ -13,8 +13,6 @@ var isValid = function(s) {
             continue;
         }
         if(charArr.indexOf(s[i]) - 1 === charArr.indexOf(answer[answer.length - 1]) ){
-            console.log('1',s[i], charArr.indexOf(s[i]) - 1)
-            console.log('2',answer[answer.length - 1], charArr.indexOf(answer[answer.length - 1]))
             answer.pop();
         } else {
             return false
